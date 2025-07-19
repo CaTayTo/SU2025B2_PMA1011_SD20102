@@ -1,0 +1,13 @@
+## label: ERD
+## shape: database
+## width: auto
+## height: auto
+## padding: 20
+## layout: auto
+Table,Columns
+users,"id (PK), email, password, role"
+categories,"id (PK), name"
+products,"id (PK), categoryId (FK), name, price, description, isBestSeller, isNew, stock"
+cart,"id (PK), userId (FK), productId (FK), quantity"
+orders,"id (PK), userId (FK), total, status, date"
+order_items,"id (PK), orderId (FK), productId (FK), quantity, price"
